@@ -1,12 +1,11 @@
 # WG-DDOS
 
 **A self-contained HTTP / Minecraft / TCP / UDP stress tool.** Clone it, run one
-command, pick a target, and it hammers it using a worker pool sized to *your*
-own VPS or PC - then prints the real damage report: attempts, successes,
-errors, data pushed, requests per second.
+command, get a numbered panel, pick a target, and it hammers it using a worker
+pool sized to *your* own VPS or PC - then prints the real damage report:
+attempts, successes, errors, data pushed, requests per second.
 
 Built and maintained by **whitiger** - https://github.com/whitigerxgaming-design
----
 
 ## DISCLAIMER - READ THIS FIRST
 
