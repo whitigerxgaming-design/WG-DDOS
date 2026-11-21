@@ -7,6 +7,8 @@ attempts, successes, errors, data pushed, requests per second.
 
 Built and maintained by **whitiger** - https://github.com/whitigerxgaming-design
 
+---
+
 ## DISCLAIMER - READ THIS FIRST
 
 **The author (whitiger) is NOT responsible for anything that happens to any
@@ -40,12 +42,14 @@ Full text: [DISCLAIMER.md](DISCLAIMER.md)
 ## Features
 
 - **4 modes:** `http`, `minecraft` (ping + join), `tcp`, `udp`
+- **Numbered panel:** install finishes and drops you straight into a menu
 - **Spec-aware:** reads your CPU cores and RAM, then sizes the worker pool
   from that. Weak box = smaller pool, no thrashing.
 - **Real stats:** live requests/s, successes, failures, bytes pushed
 - **Real report:** JSON + Markdown written to `reports/` when the run ends
 - **Pre-flight check:** verifies the target is actually up before wasting time
 - **Verdict engine:** flags a target that stops answering mid-run
+- **Confirm step:** shows a summary before firing, so a typo doesn't cost you
 - **Zero config:** no accounts, no API keys, no cloud
 - **Ctrl+C safe:** always finishes the report
 
