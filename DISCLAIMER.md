@@ -1,0 +1,50 @@
+# DISCLAIMER
+
+**WG-DDOS** - by whitiger (https://github.com/whitigerxgaming-design)
+
+## Short version
+
+The author is **not responsible** for anything that happens to any target you
+point this at, or to any machine you run it from.
+
+## Long version
+
+1. **No warranty.** This software is provided "as is", without warranty of any
+   kind, express or implied, including but not limited to warranties of
+   merchantability, fitness for a particular purpose, and non-infringement.
+
+2. **No liability.** In no event shall the author (whitiger), contributors, or
+   copyright holders be liable for any claim, damages, or other liability -
+   whether in an action of contract, tort, or otherwise - arising from, out of,
+   or in connection with the software or its use.
+
+3. **Targets.** This includes, without limitation:
+   - downtime, lag, packet loss, or service unavailability of any target
+   - players disconnected, sessions dropped, saves or data corrupted
+   - rate-limits, throttling, IP bans, or null-routing applied to your IP
+   - bandwidth overage, traffic charges, or hosting-account suspension
+   - any action taken against you by a target's owner or host
+
+4. **Accuracy.** Reported figures (requests, successes, failures, bytes,
+   requests per second) describe what *your* machine produced during the run.
+   They do not measure, and are no guarantee of, what the target actually
+   absorbed or how badly it was affected. Estimates printed before a run are
+   heuristics, not promises.
+
+5. **Permission.** Using this against a target is at your own risk. Whether you
+   had permission, and whether you needed it, is your responsibility. Many
+   hosts tolerate it; some don't. Ask first if it matters.
+
+6. **Concurrency.** Running the tool from multiple machines at once multiplies
+   everything, including your exposure to points 1-5.
+
+7. **Forking.** If you fork, rebrand, or redistribute this, you inherit the same
+   disclaimer obligations. Keep this file intact and keep the credit to
+   whitiger.
+
+## Credit
+
+Original author: **whitiger** - https://github.com/whitigerxgaming-design
+Repository: https://github.com/whitigerxgaming-design/WG-DDOS
+
+By cloning, installing, or running this software you accept the above.
