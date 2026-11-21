@@ -57,20 +57,27 @@ say "Installing dependencies"
 python -m pip install --quiet -r requirements.txt
 
 say "Setting permissions"
-chmod +x wgddos.py wgddos.sh uninstall.sh 2>/dev/null || true
+chmod +x wgddos.py wgddos.sh panel.py uninstall.sh 2>/dev/null || true
 
 UL=$(ulimit -n 2>/dev/null || echo 1024)
 if [ "$UL" -lt 8192 ] 2>/dev/null; then
   warn "Open-file limit is $UL. For real load run: ulimit -n 65535"
+  ulimit -n 65535 2>/dev/null && say "Raised open-file limit for this session" || true
 fi
 
 echo
 echo "=============================================="
-echo " Done."
-echo
-echo " Activate the env first:     source .venv/bin/activate"
-echo " Then run:                   ./wgddos.sh"
-echo " Or directly:                ./wgddos.py http https://example.com"
-echo " Check what your box can do: ./wgddos.py specs"
+echo " Installed. Author is NOT responsible for any target."
 echo "=============================================="
-echo " Remember: author is NOT responsible for any target."
+echo
+printf " Launch the panel now? [Y/n]: "
+read -r GO
+case "$GO" in
+  n|N)
+    echo
+    echo " Run it later with:  source .venv/bin/activate && ./panel.py"
+    exit 0
+    ;;
+esac
+echo
+exec python panel.py
