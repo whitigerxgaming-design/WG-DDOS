@@ -12,10 +12,10 @@ echo " WG-DDOS (bash fallback)  -  by whitiger"
 echo " AS IS, no warranty. Author not responsible."
 echo "=============================================="
 
-if [ -x ./wgddos.py ]; then
+if [ -x ./panel.py ]; then
   echo
-  echo " A full-featured python build is present."
-  echo " Run ./wgddos.py for the real thing, or press Enter to"
+  echo " The full python panel is installed."
+  echo " Run ./panel.py for the real thing, or press Enter to"
   echo " continue with the bash fallback."
   read -r _
 fi
